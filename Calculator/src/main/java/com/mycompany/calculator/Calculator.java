@@ -1,17 +1,33 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
-
 package com.mycompany.calculator;
 
-/**
- *
- * @author alexe
- */
-public class Calculator {
+import javax.swing.*;
+import java.awt.*;
+import java.util.*;
+import java.awt.event.*;
 
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
+public class Calculator extends JPanel implements ActionListener{
+
+    Buttons buttons;
+    ResultWindow resultWindow;
+
+    public Calculator() {
+        buttons = new Buttons();
+        resultWindow = new ResultWindow();
+        
+        setSizes();
     }
+
+    public void setSizes() {
+        this.setLayout(new BorderLayout());
+
+        this.add(buttons, BorderLayout.SOUTH);
+        this.add(resultWindow, BorderLayout.NORTH);
+        this.setPreferredSize(new Dimension(300,350));
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        e.getSource();
+    }
+
 }
