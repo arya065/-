@@ -7,7 +7,7 @@ import java.awt.event.*;
 
 public class Buttons extends JPanel {
 
-    JButton[] arrayBotones;
+    private JButton[] arrayBotones;
 
     public Buttons() {
         arrayBotones = new JButton[16];
@@ -42,5 +42,6 @@ public class Buttons extends JPanel {
         for (JButton tmp : arrayBotones) {
             this.add(tmp);
         }
+
     }
 }

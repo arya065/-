@@ -20,6 +20,6 @@ public class TestClass {
         frame.add(calculator);
         
         frame.setResizable(false);
-        frame.pack();// вроде как делает размер окна таким же как и в calculator
+        frame.pack();// вроде как делает размер окна таким же как и в Сalculator
     }
 }

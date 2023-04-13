@@ -7,7 +7,7 @@ import java.awt.event.*;
 
 public class ResultWindow extends JPanel {
 
-    JLabel resultLabel;
+   private JLabel resultLabel;
 
     public ResultWindow() {
         initComponents();
@@ -18,7 +18,7 @@ public class ResultWindow extends JPanel {
     }
 
     private void initComponents() {
-        resultLabel = new JLabel("0");
+        resultLabel = new JLabel("");
         this.setLayout(new FlowLayout());
         this.add(resultLabel);
         this.setPreferredSize(new Dimension(300,100));
